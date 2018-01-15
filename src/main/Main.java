@@ -13,7 +13,6 @@ public class Main {
         Map<LocalDate, Student> taskMap = new TreeMap<>();
         Student student1 = new Student("Nil", "HashMap");
         WorkWhithFile workWhithFile = new WorkWhithFile();
-        workWhithFile.initializeCalendar(taskMap);
         System.out.println(taskMap);
         workWhithFile.writeInFile(taskMap);
         workWhithFile.addStudentAtDay(taskMap, LocalDate.of(2018,1,1), student1);
